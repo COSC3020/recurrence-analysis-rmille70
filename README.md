@@ -38,6 +38,6 @@ The mystery function calls itself three times with an input of n/3, so that cont
 
 $T(n) = 3T(n/3) + n^5$
 
-$T(n) = 3(T\frac{n}{9} + \frac{n^5}{3}) + n^5$
+$T(n) = 3(T(\frac{n}{9}) + \frac{n^5}{3}) + n^5$
 
 $T(n) = 3^i(T(\frac{n}{3^i}) + n^5)$
