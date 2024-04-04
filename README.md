@@ -42,4 +42,4 @@ $= 3(T(\frac{n}{9}) + \frac{n^5}{3}) + n^5$
 
 $= 3^iT(\frac{n}{3^i}) + in^5$    {where i = $\log(n)$}
 
-$= nT(1) + n^5\log(n) = 1 + n^5\log(n)
+$= nT(1) + n^5\log(n) = 1 + n^5\log(n)$
