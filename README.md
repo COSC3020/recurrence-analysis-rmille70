@@ -37,5 +37,7 @@ Recurrance Relation: T(n) = 3T(n/3) + n^5
 The mystery function calls itself three times with an input of n/3, so that contributes the 3T(n/3), the inner-most loop ierates n^2 times, and thats in a loop iterating n times, which is in a loop that iterates n^2 times; thus that contribues (n^2)(n)(n^2) = n^5.
 
 $T(n) = 3T(n/3) + n^5$
+
 $T(n) = 3(\frac{3T(n/3) + n^5}{3}) + n^5$
+
 $T(n) = $
