@@ -58,7 +58,7 @@ $= 3^{log_3(n)}T(\frac{n}{3^{log_3(n)}}) + n^5(\frac{1-(\frac{1}{81})^{log_3(n)}
 
 $= nT(1) + \frac{81}{80}n^5 - \frac{81}{80}n + C(\frac{1-n}{2}) = \frac{81}{80}n^5 - \frac{1}{80}n + C(\frac{1-n}{2})
 
-Since the leading term is n^5, we can say the complexity is $O(n^5\log(n))$
+Since the leading term is n^5, we can say the complexity is $O(n^5)$
 
 Referenced: 
 https://github.com/COSC3020/recurrence-analysis-MelkMan419
