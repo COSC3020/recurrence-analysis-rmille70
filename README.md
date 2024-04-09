@@ -55,7 +55,7 @@ $= 3^iT(\frac{n}{3^i}) + \sum\limits_{j=0}^{i-1} \frac{n^5}{3^{4j}} + \sum\limit
 
 $= 3^iT(\frac{n}{3^i}) + n^5(\frac{1-(\frac{1}{81})^i}{1-\frac{1}{81}}) + C(\frac{1-3^i}{1-3})$
 
-$= 3^{log_3(n)}T(\frac{n}{3^{log_3(n)}}) + n^5(\frac{1-(\frac{1}{81})^{log_3(n)}}{1-\frac{1}{81}}) + C(\frac{1-3^{log_3(n)}}{1-3})$
+$= 3^{log_3(n)} + n^5(\frac{1-(\frac{1}{81})^{log_3(n)}}{1-\frac{1}{81}}) + C(\frac{1-3^{log_3(n)}}{1-3})$
 
 $= nT(1) + n^5\log_3(n) +  = n + n^5\log(n)$
 
