@@ -56,7 +56,9 @@ $= 3^iT(\frac{n}{3^i}) + n^5(\frac{1-(\frac{1}{81})^i}{1-\frac{1}{81}}) + C(\fra
 
 $= 3^{log_3(n)}T(\frac{n}{3^{log_3(n)}}) + n^5(\frac{1-(\frac{1}{81})^{log_3(n)}}{1-\frac{1}{81}}) + C(\frac{1-3^{log_3(n)}}{1-3})$
 
-$= nT(1) + \frac{81}{80}n^5 - \frac{81}{80}n + C(\frac{1-n}{2}) = \frac{81}{80}n^5 - \frac{1}{80}n + C(\frac{1-n}{2})$
+$= nT(1) + \frac{81}{80}n^5 - \frac{81}{80}n + C(\frac{1-n}{2})$
+
+$= \frac{81}{80}n^5 - \frac{1}{80}n + C(\frac{1-n}{2})$
 
 Since the leading term is $n^5$ we can say the complexity is $O(n^5)$
 
