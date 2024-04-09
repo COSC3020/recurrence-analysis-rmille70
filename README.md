@@ -60,6 +60,6 @@ $= nT(1) + \frac{81}{80}n^5 - \frac{81}{80}n + C(\frac{1-n}{2}) = \frac{81}{80}n
 
 Since the leading term is n^5, we can say the complexity is $O(n^5)$
 
-Referenced: 
-https://github.com/COSC3020/recurrence-analysis-MelkMan419
-https://en.wikipedia.org/wiki/Geometric_series#:~:text=The%20convergence%20of%20the%20geometric%20series%20depends%20on%20the%20value,the%20series%20does%20not%20converge.
+Reference 1: https://github.com/COSC3020/recurrence-analysis-MelkMan419
+
+Reference 2: https://en.wikipedia.org/wiki/Geometric_series#:~:text=The%20convergence%20of%20the%20geometric%20series%20depends%20on%20the%20value,the%20series%20does%20not%20converge.
