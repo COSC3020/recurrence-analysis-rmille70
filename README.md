@@ -42,7 +42,6 @@ $T(n) = 1$    {where n $\le$ 1}
 
 $T(n) = 3T(n/3) + n^5 + C$    {where n > 1}
 
-
 $= 3(3T(\frac{n}{9}) + (\frac{n}{3})^5 + C) + n^5 + C$    {Substitute in $T(n)$ }
 
 $= 9T(\frac{n}{9}) + 3(\frac{n}{3})^5 + n^5 + 3C + C$
@@ -55,8 +54,12 @@ $= 3^iT(\frac{n}{3^i}) + \sum\limits_{j=0}^{i-1} \frac{n^5}{3^{4j}} + \sum\limit
 
 $= 3^iT(\frac{n}{3^i}) + n^5(\frac{1-(\frac{1}{81})^i}{1-\frac{1}{81}}) + C(\frac{1-3^i}{1-3})$
 
-$= 3^{log_3(n)} + n^5(\frac{1-(\frac{1}{81})^{log_3(n)}}{1-\frac{1}{81}}) + C(\frac{1-3^{log_3(n)}}{1-3})$
+$= 3^{log_3(n)}T(\frac{n}{3^{log_3(n)}}) + n^5(\frac{1-(\frac{1}{81})^{log_3(n)}}{1-\frac{1}{81}}) + C(\frac{1-3^{log_3(n)}}{1-3})$
 
-$= nT(1) + n^5\log_3(n) +  = n + n^5\log(n)$
+$= nT(1) + \frac{81}{80}n^5 - \frac{81}{80}n + C(\frac{1-n}{2}) = \frac{81}{80}n^5 - \frac{1}{80}n + C(\frac{1-n}{2})
 
-Thus the complexity is $O(n^5\log(n))$
+Since the leading term is n^5, we can say the complexity is $O(n^5\log(n))$
+
+Referenced: 
+https://github.com/COSC3020/recurrence-analysis-MelkMan419
+https://en.wikipedia.org/wiki/Geometric_series#:~:text=The%20convergence%20of%20the%20geometric%20series%20depends%20on%20the%20value,the%20series%20does%20not%20converge.
