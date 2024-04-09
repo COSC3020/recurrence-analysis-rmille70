@@ -53,8 +53,8 @@ $= 27T(\frac{n}{27}) + 9(\frac{n}{9})^5 + 3(\frac{n}{3})^5 + n^5 + 9C + 3C + C$
 
 $= 3^iT(\frac{n}{3^i}) + \sum\limits_{j=0}^{i-1} \frac{n^5}{3^{4j}} + \sum\limits_{j=0}^{i-1} 3^j(C)$    {where i = $\log_3(n)$ }
 
-$= 3^iT(\frac{n}{3^i}) + val + val$
+$= 3^iT(\frac{n}{3^i}) + n^5(\frac{1-(\frac{1}{81})^i}{1-\frac{1}{81}}) + C(\frac{1-3^i}{1-3})$
 
-$= nT(1) + n^5\log(n) = n + n^5\log(n)$
+$= nT(1) + n^5\log_3(n) +  = n + n^5\log(n)$
 
 Thus the complexity is $O(n^5\log(n))$
