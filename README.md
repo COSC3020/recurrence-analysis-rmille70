@@ -47,9 +47,9 @@ $= 3(3T(\frac{n}{9}) + (\frac{n}{3})^5 + C) + n^5 + C$    {Substitute in T(n)}
 
 $= 9T(\frac{n}{9}) + 3(\frac{n}{3})^5 + n^5 + 3C + C$
 
-$= 3(9T(\frac{n}{27}) + 3(\frac{n}{9})^5 + (\frac{n}{3})^5 + 3C) + n^5 + C$    {Substitute in T(n) again}
+$= 3(9T(\frac{n}{27}) + 3(\frac{n}{9})^5 + (\frac{n}{3})^5 + 3C + C) + n^5 + C$    {Substitute in T(n) again}
 
-$= 27T(\frac{n}{27}) + 9(\frac{n}{9})^5 + 3(\frac{n}{3})^5 + n^5 + 9 C$
+$= 27T(\frac{n}{27}) + 9(\frac{n}{9})^5 + 3(\frac{n}{3})^5 + n^5 + 9C + 3C + C$
 
 $= 3^iT(\frac{n}{3^i}) + \sum_{j=0}^{i} \frac{n^5}{3^4j} + \sum_{j=0}^{i} 3^j(C)$    {where i = $\log(n)$}
 
