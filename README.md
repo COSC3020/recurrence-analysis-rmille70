@@ -42,13 +42,18 @@ $T(n) = 1$    {where n $\le$ 1}
 
 $T(n) = 3T(n/3) + n^5 + C$    {where n > 1}
 
-$= 3(3T(\frac{n}{3^2} + C) + (\frac{n}{3}))^5 + n^5 + C$
+{Substitute in T(n)}
+$= 3(3T(\frac{n}{9}) + (\frac{n}{3})^5) + n^5 + C$
 
-$= 3^2T(\frac{n}{3^2} + C) + 3(\frac{n}{3})^5 + n^5 + C$
+$= 9T(\frac{n}{9}) + 3(\frac{n}{3})^5 + n^5 + C$
 
-$= 3^3T(\frac{n}{3^3} + C) + 3^2(\frac{n}{3^2})^5 + 3n^5 + 3C + n^5$
+{Substitute in T(n) again}
+$= 3(9T(\frac{n}{9}) + 3(\frac{n}{3})^5 + (\frac{n}{9})^5 + C) + n^5 + C$
 
-$= 3^iT(\frac{n}{3^i}) + in^5$    {where i = $\log(n)$}
+$= 27T(\frac{n}{27}) + 9(\frac{n^5}{3}) + 3n^5 + 3n^5 + C$
+
+{Notice a Pattern}
+$= 3^iT(\frac{n}{3^i}) + (\sum_{j=1}^i 3^j(\frac{n}{3^j})) + (\sum_{j=1}^i 3^j(\frac{n}{3^j}))$    {where i = $\log(n)$}
 
 
 
