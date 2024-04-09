@@ -51,10 +51,9 @@ $= 3(9T(\frac{n}{27}) + 3(\frac{n}{9})^5 + (\frac{n}{3})^5 + 3C) + n^5 + C$    {
 
 $= 27T(\frac{n}{27}) + 9(\frac{n^5}{3}) + 3n^5 + 3n^5 + C$
 
-{Notice a Pattern}
 $= 3^iT(\frac{n}{3^i}) + (\sum_{j=1}^i 3^j(\frac{n}{3^j})) + (\sum_{j=1}^i 3^j(\frac{n}{3^j}))$    {where i = $\log(n)$}
 
-
+(\sum_{j=1}^i 3^j(\frac{n}{3^j}))
 
 $= nT(1) + n^5\log(n) = n + n^5\log(n)$
 
