@@ -42,13 +42,12 @@ $T(n) = 1$    {where n $\le$ 1}
 
 $T(n) = 3T(n/3) + n^5 + C$    {where n > 1}
 
-{Substitute in T(n)}
-$= 3(3T(\frac{n}{9}) + (\frac{n}{3})^5) + n^5 + C$
+
+$= 3(3T(\frac{n}{9}) + (\frac{n}{3})^5) + n^5 + C$    {Substitute in T(n)}
 
 $= 9T(\frac{n}{9}) + 3(\frac{n}{3})^5 + n^5 + C$
 
-{Substitute in T(n) again}
-$= 3(9T(\frac{n}{9}) + 3(\frac{n}{3})^5 + (\frac{n}{9})^5 + C) + n^5 + C$
+$= 3(9T(\frac{n}{9}) + 3(\frac{n}{3})^5 + (\frac{n}{9})^5 + C) + n^5 + C$    {Substitute in T(n) again}
 
 $= 27T(\frac{n}{27}) + 9(\frac{n^5}{3}) + 3n^5 + 3n^5 + C$
 
